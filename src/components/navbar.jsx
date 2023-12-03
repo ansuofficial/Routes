@@ -1,13 +1,21 @@
-const Navbar = () => {
+ import { Link } from "react-router-dom";
+ import React from "react";
+ const Navbar = () => {
   return (
     <div>
-      <div className="bg-violet-200">
+      <div className="flex justify-between px-12">
         <div>
-          <h1>Vanlifes</h1>
+          <h1 className="font-bold text-[26px] text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-yellow-900">
+            #Vanlifes
+          </h1>
         </div>
-        <ul>
-          <li>About</li>
-          <li>Vans</li>
+        <ul className="flex gap-x-14">
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/">Vans</Link>
+          </li>
         </ul>
       </div>
     </div>
