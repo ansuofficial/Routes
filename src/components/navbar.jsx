@@ -16,6 +16,9 @@
           <li>
             <Link to="/">Vans</Link>
           </li>
+          <li>
+            <Link to="/uitest">To ui</Link>
+          </li>
         </ul>
       </div>
     </div>
